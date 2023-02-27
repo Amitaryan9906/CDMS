@@ -38,3 +38,47 @@ Java - The programming language used
 MySQL - The relational database management system used
 MySQL Connector/J - The JDBC driver used to connect to the MySQL database
 Eclipse IDE - The integrated development environment used for coding and debugging
+
+
+
+
+ER Diagram:
+            +---------------+
+            |     crime     |
+            +---------------+
+            | crime_id      |
+            | date          |
+            | place         |
+            | description   |
+            | victims       |
+            | details       |
+            | suspected     |
+            | status        |
+            | area          |
+            | police_station|
+            +---------------+
+                  |
+                  |
+                  |
+            +---------------+
+            | crime_criminal|
+            +---------------+
+            | crime_id      |
+            | criminal_id   |
+            +---------------+
+                  |
+                  |
+                  |
+            +---------------+
+            |   criminal    |
+            +---------------+
+            | criminal_id   |
+            | name          |
+            | gender        |
+            | age           |
+            | address       |
+            | phone_number  |
+            | crime_history |
+            | arrested      |
+            | police_station|
+            +---------------+
